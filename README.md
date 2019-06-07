@@ -8,4 +8,5 @@
 * hobby : games, listen to music
 * E-mail : dlsrnjs31@naver.com
 
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1BiBh-0vSsnLWkBbTzQsl9dFS52ZOWSubZ3vhpYgpLxpSCAJCcQ)
+![](https://images.mir.pe/file/7b3f90731c414c7dfb686a9e45d9c3152e90bba7eb2387a5dfdbf5e6b6f5dc01)
+
