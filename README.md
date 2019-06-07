@@ -1,1 +1,7 @@
-# 안녕하세요 송인권의 페이지 입니다.
+# InGwon's Repository
+* Name : InGwon Song
+* Gender : Man
+* Age : 25
+* Education : Inchang High school
+* Nation : Namyangju, Republic of Korea
+* hobby : games, listen to music
