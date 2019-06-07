@@ -1,0 +1,176 @@
+
+Server2 에서 mdadm 순서
+
+
+
+
+mdadm 설치 -> yum -y install mdadm
+
+
+mdadm --crete /dev/md0 --level=0 --raid-devices=2 /dev/sdd1 /dev/sde1
+
+mkfs.ext4 /dev/md0
+
+mkdir /raid0
+
+mount /dev/md0 /raid0 
+
+
+
+---------------------------------
+
+mdadm /dev/md? --add /dev/sdj1  추가하기
+
+
+
+mdadm --detail /dev/md?  확인하기
+
+
+
+mdadm --fail /dev/md?  삭제하기
+
+
+
+mdadm --stop /dev/md?  정지하기
+
+
+
+-----------------------------------
+
+
+
+디스크 파티셔닝
+
+
+fdisk /dev/sd?
+
+
+
+------------------------------------
+
+tftp 69번 포트
+
+67포트 68클라이언프
+
+DHCP = 자동으로 IP를 할당받는것 UDP
+
+Discovery
+Offer
+Request
+Acknowledgement
+
+
+
+
+
+dig www.naver.com
+
+
+dig @ns.lgdacom.net www.naver.com
+
+
+vi /etc/re
+
+
+vi /etc/resolv.conf
+
+
+find / -name resol*
+
+
+find / -name sshd*
+
+
+yum -y install bind bind-chroot
+
+
+
+systemctl start named
+
+systemctl enable named
+
+systemctl status named
+
+
+firewall-config 방화벽
+
+
+
+----------------------------------------------
+
+
+서버에서
+
+
+yum -y install telnet-server = 텔넷 설치
+
+
+클라이언트에서
+
+
+yum -y install telnet = 텔넷 설치
+
+
+su -c'yum -y install telnet' = 스위칭 유저 권한으로 텔넷 설치
+
+
+
+--------------------------------------------------------
+
+rpm -qa openssh* = 서버에 openssh가 깔려있는지 확인
+
+
+yum -y install openssh-server
+
+
+ssh teluser@서버 아이피
+
+su - 관리자로 돌아오기
+
+
+
+---------------------------------------------
+
+
+[root@localhost ~]# firewall-cmd --add-service=http
+success
+[root@localhost ~]# firewall-cmd --add-port=80/tcp
+success
+[root@localhost ~]# find / -name noindex*
+/usr/share/httpd/noindex
+[root@localhost ~]# cd /usr/share/httpd/noindex
+[root@localhost noindex]# ls
+css  images  index.html
+[root@localhost noindex]# cd /var/www/html
+[root@localhost html]# ls
+[root@localhost html]# touch index.html
+[root@localhost html]# vi index.html
+
+
+
+----------------------------------------------------------
+
+
+systemctl start vsftpd && systemctl enable vsftpd = &&를 붙이면 동시에 수행가능
+
+ls= 해당목록을 보여줌
+
+ll = 소유자 날짜 등을 보여줌
+
+
+-------------------------------------------------------------
+
+
+[root@localhost vsftpd]# cd /etc/vsftpd
+[root@localhost vsftpd]# ls
+ftpusers  user_list  vsftpd.conf  vsftpd_conf_migrate.sh
+[root@localhost vsftpd]# cp vsftpd.conf vsftpd.conf_bk -> 카피 방법
+[root@localhost vsftpd]# ls
+ftpusers  user_list  vsftpd.conf  vsftpd.conf_bk  vsftpd_conf_migrate.sh
+
+
+-----------------------------------------------------------------
+
+$ su -c'mount -t nfs 192.168.111.100:/share /home/centos/myShare' -> su 권한으로 마운트하기
+
+
