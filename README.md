@@ -2,6 +2,7 @@
 * Name : InGwon Song
 * Gender : Man
 * Age : 25
+* E-mail : dlsrnjs31@naver.com
 * Education : Inchang High school
 * Nation : Republic of Korea
 * Where to live : Namyangju
