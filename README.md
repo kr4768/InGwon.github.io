@@ -7,3 +7,4 @@
 * Nation : Republic of Korea
 * Where to live : Namyangju
 * hobby : games, listen to music
+![](KakaoTalk_20190607_191103130.jpg)
